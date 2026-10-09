@@ -4,25 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Liberty Star Eye and Ear Drugs Limited</title>
-  <meta name="description" content="Liberty Star Eye and Ear Drugs Limited offers trusted eye and ear care products, wellness essentials, and customer-focused healthcare support." />
+  <meta name="description" content="Liberty Star Eye and Ear Drugs Limited offers trusted eye and ear care products, wellness essentials, and customer-focused healthcare support in Onitsha, Anambra State." />
   <style>
     :root {
-      --primary: #0d5c75;
-      --secondary: #1b8bb4;
-      --accent: #eaf7fb;
-      --dark: #123b4d;
-      --text: #22313f;
+      --primary: #1b5e20;
+      --secondary: #2e7d32;
+      --accent: #e8f5e9;
+      --dark: #0d3818;
+      --text: #1b5e20;
       --light: #ffffff;
-      --muted: #6c7a89;
-      --soft: #f6fbfd;
-      --border: rgba(13, 92, 117, 0.12);
+      --muted: #558b2f;
+      --soft: #f1f8e9;
+      --border: rgba(27, 94, 32, 0.12);
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: var(--text);
       background: var(--soft);
       line-height: 1.6;
@@ -37,9 +37,9 @@
     }
 
     header {
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 18px rgba(0, 0, 0, 0.05);
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(27, 94, 32, 0.08);
       position: sticky;
       top: 0;
       z-index: 100;
@@ -49,36 +49,37 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      min-height: 78px;
+      min-height: 80px;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 1.2rem;
+      gap: 12px;
+      font-size: 1.1rem;
       font-weight: 800;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       color: var(--primary);
       text-transform: uppercase;
     }
 
     .brand-mark {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 10px;
       display: grid;
       place-items: center;
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      font-weight: bold;
-      box-shadow: 0 8px 18px rgba(13, 92, 117, 0.2);
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(27, 94, 32, 0.25);
+      font-size: 1.4rem;
     }
 
     nav ul {
       display: flex;
       list-style: none;
-      gap: 26px;
+      gap: 28px;
       margin: 0;
       padding: 0;
       font-weight: 600;
@@ -86,7 +87,8 @@
     }
 
     nav a {
-      transition: color 0.2s ease;
+      transition: color 0.3s ease;
+      position: relative;
     }
 
     nav a:hover {
@@ -95,36 +97,36 @@
 
     .btn {
       display: inline-block;
-      background: var(--primary);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: var(--light);
-      padding: 13px 24px;
-      border-radius: 10px;
+      padding: 14px 28px;
+      border-radius: 12px;
       font-weight: 700;
       border: 2px solid transparent;
-      transition: all 0.2s ease;
-      box-shadow: 0 12px 24px rgba(13, 92, 117, 0.18);
+      transition: all 0.3s ease;
+      box-shadow: 0 12px 28px rgba(27, 94, 32, 0.22);
     }
 
     .btn:hover {
-      background: var(--secondary);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 36px rgba(27, 94, 32, 0.28);
     }
 
     .btn-light {
       background: var(--light);
       color: var(--primary);
-      border-color: var(--primary);
-      box-shadow: none;
+      border: 2px solid var(--primary);
+      box-shadow: 0 8px 20px rgba(27, 94, 32, 0.12);
     }
 
     .btn-light:hover {
-      background: #f3fbff;
-      color: var(--primary);
+      background: var(--accent);
+      color: var(--dark);
     }
 
     .hero {
-      background: linear-gradient(135deg, var(--accent), #ffffff 60%);
-      padding: 90px 0 70px;
+      background: linear-gradient(135deg, var(--accent), #ffffff 70%);
+      padding: 100px 0 70px;
     }
 
     .hero-grid {
@@ -136,17 +138,18 @@
 
     .hero h1 {
       font-size: clamp(2.5rem, 4vw, 4.2rem);
-      line-height: 1.08;
-      margin: 0 0 18px;
+      line-height: 1.1;
+      margin: 0 0 20px;
       color: var(--dark);
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
     }
 
     .hero p {
-      font-size: 1.08rem;
+      font-size: 1.1rem;
       color: var(--muted);
-      margin: 0 0 28px;
+      margin: 0 0 30px;
       max-width: 650px;
+      line-height: 1.8;
     }
 
     .hero-actions {
@@ -156,12 +159,12 @@
     }
 
     .hero-card {
-      background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(234,247,251,0.9));
-      border: 1px solid var(--border);
-      border-radius: 26px;
-      box-shadow: 0 24px 48px rgba(13, 92, 117, 0.08);
-      min-height: 340px;
-      padding: 18px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(232,245,233,0.9));
+      border: 2px solid rgba(27, 94, 32, 0.15);
+      border-radius: 28px;
+      box-shadow: 0 28px 56px rgba(27, 94, 32, 0.1);
+      min-height: 360px;
+      padding: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -170,25 +173,25 @@
 
     .hero-panel {
       background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 22px;
+      border: 2px solid rgba(27, 94, 32, 0.1);
+      border-radius: 24px;
       width: 100%;
-      min-height: 260px;
+      min-height: 280px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 14px;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+      gap: 16px;
+      box-shadow: inset 0 2px 8px rgba(255,255,255,1);
     }
 
     .icon {
-      font-size: 3.2rem;
+      font-size: 3.6rem;
       line-height: 1;
     }
 
     .panel-title {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: var(--dark);
     }
@@ -196,19 +199,20 @@
     .panel-text {
       color: var(--muted);
       font-weight: 600;
+      font-size: 0.95rem;
     }
 
     section {
-      padding: 82px 0;
+      padding: 90px 0;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 42px;
+      margin-bottom: 50px;
     }
 
     .section-title h2 {
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       color: var(--dark);
       font-size: clamp(2rem, 3vw, 2.8rem);
       letter-spacing: -0.02em;
@@ -217,7 +221,7 @@
     .section-title p {
       margin: 0;
       color: var(--muted);
-      font-size: 1.04rem;
+      font-size: 1.05rem;
     }
 
     .about-grid,
@@ -225,61 +229,78 @@
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
+      gap: 28px;
     }
 
     .card {
       background: var(--light);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 28px 24px;
-      box-shadow: 0 10px 28px rgba(18, 59, 77, 0.04);
+      border: 2px solid rgba(27, 94, 32, 0.1);
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: 0 12px 32px rgba(27, 94, 32, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 48px rgba(27, 94, 32, 0.12);
+      border-color: rgba(27, 94, 32, 0.2);
     }
 
     .card h3 {
-      margin: 0 0 12px;
+      margin: 0 0 14px;
       color: var(--dark);
-      font-size: 1.45rem;
+      font-size: 1.5rem;
     }
 
     .card p, .card li {
       color: var(--muted);
       margin: 0;
+      line-height: 1.7;
     }
 
     .card ul {
       margin: 0;
-      padding-left: 18px;
+      padding-left: 20px;
       color: var(--muted);
       display: grid;
-      gap: 8px;
+      gap: 10px;
     }
 
     .cta {
-      background: linear-gradient(135deg, var(--dark), #163f4b);
+      background: linear-gradient(135deg, var(--dark), var(--primary));
       color: var(--light);
       text-align: center;
-      padding: 80px 0;
+      padding: 90px 0;
     }
 
     .cta h2 {
-      margin: 0 0 16px;
+      margin: 0 0 18px;
       font-size: clamp(2rem, 3vw, 3rem);
       letter-spacing: -0.02em;
     }
 
     .cta p {
-      margin: 0 0 26px;
-      color: rgba(255,255,255,0.85);
-      font-size: 1.04rem;
+      margin: 0 0 28px;
+      color: rgba(255,255,255,0.9);
+      font-size: 1.05rem;
     }
 
     footer {
-      background: #0c2230;
-      color: #dfeff5;
-      padding: 30px 0;
+      background: #0d3818;
+      color: #c8e6c9;
+      padding: 40px 0;
       text-align: center;
-      font-size: 0.96rem;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #81c784;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
     }
 
     @media (max-width: 820px) {
@@ -299,11 +320,11 @@
       }
 
       .brand {
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
 
       .hero {
-        padding-top: 60px;
+        padding-top: 70px;
       }
     }
   </style>
@@ -313,7 +334,7 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <span class="brand-mark">L</span>
+        <span class="brand-mark">LS</span>
         <span>Liberty Star</span>
       </div>
 
@@ -336,7 +357,7 @@
         <h1>Trusted Vision, Hearing, and Wellness Solutions</h1>
         <p>
           At Liberty Star Eye and Ear Drugs Limited, we provide quality eye and ear care products,
-          general healthcare essentials, and trusted wellness support for healthier living.
+          general healthcare essentials, and trusted wellness support for healthier living across Onitsha and beyond.
         </p>
         <div class="hero-actions">
           <a href="#products" class="btn">Shop Products</a>
@@ -348,7 +369,7 @@
         <div class="hero-panel">
           <div class="icon">👁️👂</div>
           <div class="panel-title">Eye & Ear Care</div>
-          <div class="panel-text">Quality care you can trust</div>
+          <div class="panel-text">Premium quality care you can trust</div>
         </div>
       </div>
     </div>
@@ -358,7 +379,7 @@
     <div class="container">
       <div class="section-title">
         <h2>About Us</h2>
-        <p>Quality care, trusted support, and dependable healthcare essentials.</p>
+        <p>Quality care, trusted support, and dependable healthcare essentials for everyone.</p>
       </div>
 
       <div class="about-grid">
@@ -366,7 +387,7 @@
           <h3>Our Mission</h3>
           <p>
             To provide safe, effective, and affordable healthcare solutions that help improve
-            everyday wellbeing and quality of life.
+            everyday wellbeing and quality of life for families in our community.
           </p>
         </div>
 
@@ -374,7 +395,7 @@
           <h3>Our Vision</h3>
           <p>
             To become a leading trusted source of eye, ear, and wellness products for households
-            and communities across the region.
+            and communities across Anambra State and beyond.
           </p>
         </div>
 
@@ -382,7 +403,7 @@
           <h3>Our Promise</h3>
           <p>
             We are committed to quality, integrity, customer satisfaction, and dependable service
-            in every interaction.
+            in every interaction with our valued customers.
           </p>
         </div>
       </div>
@@ -393,23 +414,23 @@
     <div class="container">
       <div class="section-title">
         <h2>Our Products</h2>
-        <p>Trusted healthcare essentials tailored for everyday wellness.</p>
+        <p>Premium healthcare essentials tailored for everyday wellness and health.</p>
       </div>
 
       <div class="features-grid">
         <div class="card">
-          <h3>Eye Care</h3>
-          <p>Effective products designed to support vision care, comfort, and overall eye health.</p>
+          <h3>👁️ Eye Care</h3>
+          <p>Effective products designed to support vision care, comfort, and overall eye health for all ages.</p>
         </div>
 
         <div class="card">
-          <h3>Ear Care</h3>
-          <p>Reliable ear care essentials that help support daily hygiene and hearing wellbeing.</p>
+          <h3>👂 Ear Care</h3>
+          <p>Reliable ear care essentials that help support daily hygiene and hearing wellbeing for families.</p>
         </div>
 
         <div class="card">
-          <h3>Wellness Products</h3>
-          <p>General healthcare and personal care items for families seeking dependable support.</p>
+          <h3>💊 Wellness Products</h3>
+          <p>General healthcare and personal care items for families seeking dependable health support.</p>
         </div>
       </div>
     </div>
@@ -419,23 +440,23 @@
     <div class="container">
       <div class="section-title">
         <h2>Why Choose Us</h2>
-        <p>Built on trust, care, and customer-first service.</p>
+        <p>Built on trust, care, and customer-first service since day one.</p>
       </div>
 
       <div class="features-grid">
         <div class="card">
           <h3>Quality Assured</h3>
-          <p>We prioritize safe, dependable, and effective healthcare solutions.</p>
+          <p>We prioritize safe, dependable, and effective healthcare solutions tested for reliability.</p>
         </div>
 
         <div class="card">
           <h3>Affordable Pricing</h3>
-          <p>Accessible products designed to support everyday health needs without compromise.</p>
+          <p>Accessible products designed to support everyday health needs without compromise on quality.</p>
         </div>
 
         <div class="card">
           <h3>Customer Care</h3>
-          <p>Friendly guidance and support to help you choose the right products for your needs.</p>
+          <p>Friendly guidance and support to help you choose the right products for your health needs.</p>
         </div>
       </div>
     </div>
@@ -443,9 +464,9 @@
 
   <section class="cta">
     <div class="container">
-      <h2>Need reliable eye and ear care solutions?</h2>
-      <p>Let our team help you find the right products for your health and wellness needs.</p>
-      <a href="#contact" class="btn btn-light">Talk to Us</a>
+      <h2>Need Reliable Eye and Ear Care Solutions?</h2>
+      <p>Let our dedicated team help you find the perfect products for your health and wellness needs today.</p>
+      <a href="#contact" class="btn btn-light">Talk to Us Now</a>
     </div>
   </section>
 
@@ -453,30 +474,38 @@
     <div class="container">
       <div class="section-title">
         <h2>Contact Us</h2>
-        <p>We are here to help with your healthcare needs.</p>
+        <p>We are here to help with your healthcare needs. Reach out anytime.</p>
       </div>
 
       <div class="contact-grid">
         <div class="card">
-          <h3>Phone</h3>
-          <p>+234 XXX XXX XXXX</p>
+          <h3>☎️ Phone</h3>
+          <p><a href="tel:+2348030922120" style="color: var(--primary); font-weight: 600;">+2348030922120</a></p>
+          <p style="font-size: 0.85rem; margin-top: 8px;">Call us for quick support</p>
         </div>
 
         <div class="card">
-          <h3>Email</h3>
-          <p>info@libertystareyandear.com</p>
+          <h3>📧 Email</h3>
+          <p><a href="mailto:libertystarbusinesslimited@gmail.com" style="color: var(--primary); font-weight: 600;">libertystarbusinesslimited@gmail.com</a></p>
+          <p style="font-size: 0.85rem; margin-top: 8px;">Send us your inquiries</p>
         </div>
 
         <div class="card">
-          <h3>Address</h3>
-          <p>[Your Business Address]</p>
+          <h3>📍 Address</h3>
+          <p style="font-weight: 600;">Ose Market, Onitsha<br>Anambra State, Nigeria</p>
+          <p style="font-size: 0.85rem; margin-top: 8px;">Visit us in store</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2026 Liberty Star Eye and Ear Drugs Limited. All rights reserved.
+    <div class="container">
+      <p>
+        © 2026 <strong>Liberty Star Eye and Ear Drugs Limited</strong>. All rights reserved.<br>
+        Located at Ose Market, Onitsha | Proudly serving Anambra State
+      </p>
+    </div>
   </footer>
 
 </body>
