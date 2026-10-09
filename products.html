@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Liberty Star Eye and Ear Drugs Limited</title>
+  <meta name="description" content="Browse the products and wellness solutions available from Liberty Star Eye and Ear Drugs Limited." />
+  <style>
+    :root {
+      --primary: #1b5e20;
+      --secondary: #2e7d32;
+      --accent: #e8f5e9;
+      --dark: #0d3818;
+      --text: #1b5e20;
+      --light: #ffffff;
+      --muted: #558b2f;
+      --soft: #f1f8e9;
+      --border: rgba(27, 94, 32, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background: var(--soft);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container { width: min(1100px, 90%); margin: 0 auto; }
+
+    header {
+      background: rgba(255,255,255,0.98);
+      box-shadow: 0 4px 18px rgba(27,94,32,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 78px;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--primary);
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--light);
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+      box-shadow: 0 12px 24px rgba(27,94,32,0.18);
+    }
+
+    .page-hero {
+      background: linear-gradient(135deg, var(--accent), #fff 65%);
+      padding: 72px 0 50px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      margin: 0 0 12px;
+      color: var(--dark);
+      font-size: clamp(2.2rem, 3vw, 3.2rem);
+    }
+
+    .page-hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+      padding: 70px 0;
+    }
+
+    .card {
+      background: var(--light);
+      border: 2px solid rgba(27,94,32,0.1);
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 12px 30px rgba(27,94,32,0.05);
+    }
+
+    .card h3 {
+      margin: 0 0 12px;
+      color: var(--dark);
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--dark), var(--primary));
+      color: white;
+      text-align: center;
+      padding: 72px 0;
+    }
+
+    .cta h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+    }
+
+    .cta p {
+      margin: 0 0 24px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .btn-light {
+      background: var(--light);
+      color: var(--primary);
+      border: 2px solid var(--light);
+    }
+
+    footer {
+      background: #0d3818;
+      color: #d9f2db;
+      text-align: center;
+      padding: 28px 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 820px) {
+      nav ul { display: none; }
+      .nav { justify-content: center; }
+      .products-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-mark">LS</span>
+        <span>Liberty Star</span>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html#contact" class="btn">Contact Us</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Healthcare Products</h1>
+      <p>Focused on your eye, ear, and wellness needs with trusted care and reliable support.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="products-grid">
+      <article class="card">
+        <h3>👁️ Eye Care Solutions</h3>
+        <p>Quality products that support comfort, hygiene, and overall eye health for daily use.</p>
+      </article>
+
+      <article class="card">
+        <h3>👂 Ear Care Essentials</h3>
+        <p>Dependable ear health products designed to help maintain cleanliness and everyday hearing wellbeing.</p>
+      </article>
+
+      <article class="card">
+        <h3>💊 Wellness & Family Care</h3>
+        <p>General healthcare and personal care items selected to support a healthier lifestyle at home and in the community.</p>
+      </article>
+    </section>
+  </main>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Need Assistance?</h2>
+      <p>Speak with our support team for trusted guidance on the right product for your needs.</p>
+      <a href="tel:+2348030922120" class="btn btn-light">Call +2348030922120</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Liberty Star Eye and Ear Drugs Limited. All rights reserved.
+  </footer>
+</body>
+</html>
+
